@@ -38,6 +38,7 @@ ul {
     line-height: 66px;
     text-transform: capitalize;
     color: #ffffff;
+    padding: 0px 0px 10px 0px;
 }
 
 .section-heading {
@@ -47,6 +48,17 @@ ul {
     line-height: 50px;
     text-transform: capitalize;
     color: #323232;
+    padding: 0px 0px 10px 0px;
+}
+
+.white-section-heading {
+    font-family: 'Rubik';
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 50px;
+    text-transform: capitalize;
+    color: #ffffff;
+    padding: 0px 0px 10px 0px;
 }
 
 .orange-heading {
@@ -58,7 +70,8 @@ ul {
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
-    color: #ffffff
+    color: #ffffff;
+    padding: 10px 0px;
 }
 
 .dark-pera {
@@ -66,14 +79,21 @@ ul {
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
-    color: #323232
+    color: #323232;
+    padding: 10px 0px;
+}
+
+button {
+    border: none;
+    margin-top: 10px;
+    border-radius: 3px;
 }
 
 .btn {
     padding: 0;
 }
 
-button a {
+.dark-btn {
     padding: 16px 32px;
     background-color: #ffffff;
     border-radius: 3px;
@@ -86,22 +106,171 @@ button a {
     transition: background-color 0.5s;
 }
 
-button a:hover {
+.dark-btn:hover {
     background-color: #FF6200;
     color: #333333;
+}
+
+.orange-btn {
+    padding: 16px 32px;
+    background-color: #FF6200;
+    border-radius: 3px;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 500;
+    font-family: 'rubik';
+    color: #ffffff;
+    transition: background-color 0.5s;
+}
+
+.orange-btn:hover {
+    background-color: #323232;
+    color: #ffffff;
 }
 
 /* Global styles  End */
 
 
-/* banner styles   */
+/* banner styles Start  */
 
 .banner {
     background: linear-gradient(103.07deg, #092753 25.86%, #09182E 79.73%);
 }
 
 
-/* banner styles   */
+/* banner styles End  */
+/* Journey styles  start */
+
+.journey {
+    padding: 100px 0px;
+}
+
+
+/* banner styles  End */
+
+
+
+
+/* CTA styles  End */
+.cta-container {
+    background: url("Assets/cta-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 60px;
+    border-radius: 15px;
+}
+
+/* CTA styles  End */
+
+
+
+
+
+
+/* Service  styles  Start */
+.services {
+    padding: 80px 0px;
+    background-color: #FAFAFF;
+    position: relative;
+    z-index: 999;
+}
+
+.services::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 20%;
+    left: 60%;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: url("Assets/bg-overlay.png");
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.service-box {
+    padding: 30px;
+    border: 1px solid #E6E3FD;
+    border-radius: 15px;
+    box-shadow: none;
+    transition: box-shadow 0.5s;
+    background-color: #fff;
+    z-index: 600;
+}
+
+.service-box:hover {
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+}
+
+.service-box img {
+    height: 200px;
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.service-title {
+    font-family: 'rubik';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 34px;
+    color: #000000;
+    padding-bottom: 10px;
+}
+
+.service-desc {
+    font-family: 'rubik';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #323232;
+    padding: 10px 0px;
+}
+
+.service-link {
+    font-family: 'rubik';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FF6200;
+    background-color: #fff;
+    padding: 16px 32px 16px 0px;
+}
+
+.service-link:hover {
+    color: #333333
+}
+
+
+
+
+
+/* Service styles  End */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Responsive styles start from here   */
 
@@ -113,18 +282,36 @@ button a:hover {
         line-height: 58px;
     }
 
-    /* .white-pera {
-        font-size: 16px;
-        line-height: 26px;
-    } */
-
-    button a {
+    .dark-btn,
+    .orange-btn {
         padding: 12px 24px;
     }
 
-    button {
-        padding: 0;
+    .section-heading {
+        font-size: 36px;
+        line-height: 46px;
     }
+
+    .journey {
+        padding: 60px 0px;
+    }
+
+    .white-section-heading {
+        font-size: 36px;
+        line-height: 46px;
+    }
+
+    .service-title {
+        font-size: 22px;
+        line-height: 32px;
+    }
+        .services::after {
+            width: 50%;
+            top: 19%;
+            left: 50%;
+            bottom: 0%;
+            right: 0%;
+        }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -133,19 +320,98 @@ button a:hover {
         line-height: 50px;
     }
 
-    button a {
+    .dark-btn,
+    .orange-btn {
         padding: 12px 24px;
     }
 
+    .section-heading {
+        font-size: 32px;
+        line-height: 42px;
+    }
+
+    .journey {
+        padding: 60px 0px;
+    }
+
+    .white-section-heading {
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    .cta-container {
+        padding: 60px 30px
+    }
+
+    .service-title {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .service-desc {
+        font-size: 16px;
+        font-family: 26px;
+
+    }
+
+    .service-box img {
+        height: 100px;
+        width: 150px;
+    }
+
+    .services::after {
+        width: 50%;
+        top: 53%;
+        left: 50%;
+        bottom: 0%;
+        right: 0%;
+    }
 }
+
 @media screen and (max-width: 767px) {
     .banner-heading {
         font-size: 36px;
         line-height: 46px;
     }
 
-    button a {
-        padding: 12px 24px;
+    .dark-btn,
+    .orange-btn {
+        padding: 16px 32px;
     }
+
+    .section-heading {
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    .journey {
+        padding: 40px 0px;
+    }
+
+    .white-section-heading {
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    .cta {
+        margin: 0px 30px;
+    }
+
+    .cta-container {
+        padding: 40px 30px;
+        /* margin: 0px 30px; */
+    }
+
+    .services {
+        padding: 20px;
+    }
+        .services::after {
+            width: 30%;
+            top: 63%;
+            left: 70%;
+            bottom: 0%;
+            right: 0%;
+        }
+
 
 }
