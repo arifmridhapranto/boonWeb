@@ -1,0 +1,151 @@
+/* Font link   */
+/* font family Inter  */
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+/* Font family Rubik  */
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Rubik:wght@300;400;500;600&display=swap');
+
+
+
+
+
+/* Global styles  Start */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    /* scroll-padding-top: 7rem; */
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.banner-heading {
+    font-family: 'Rubik';
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 66px;
+    text-transform: capitalize;
+    color: #ffffff;
+}
+
+.section-heading {
+    font-family: 'Rubik';
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 50px;
+    text-transform: capitalize;
+    color: #323232;
+}
+
+.orange-heading {
+    color: #FF6200;
+}
+
+.white-pera {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #ffffff
+}
+
+.dark-pera {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #323232
+}
+
+.btn {
+    padding: 0;
+}
+
+button a {
+    padding: 16px 32px;
+    background-color: #ffffff;
+    border-radius: 3px;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 500;
+    font-family: 'rubik';
+    color: #333333;
+    transition: background-color 0.5s;
+}
+
+button a:hover {
+    background-color: #FF6200;
+    color: #333333;
+}
+
+/* Global styles  End */
+
+
+/* banner styles   */
+
+.banner {
+    background: linear-gradient(103.07deg, #092753 25.86%, #09182E 79.73%);
+}
+
+
+/* banner styles   */
+
+/* Responsive styles start from here   */
+
+/* For Tablet  */
+
+@media screen and (min-width: 992px) and (max-width:1199px) {
+    .banner-heading {
+        font-size: 48px;
+        line-height: 58px;
+    }
+
+    /* .white-pera {
+        font-size: 16px;
+        line-height: 26px;
+    } */
+
+    button a {
+        padding: 12px 24px;
+    }
+
+    button {
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .banner-heading {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    button a {
+        padding: 12px 24px;
+    }
+
+}
+@media screen and (max-width: 767px) {
+    .banner-heading {
+        font-size: 36px;
+        line-height: 46px;
+    }
+
+    button a {
+        padding: 12px 24px;
+    }
+
+}
