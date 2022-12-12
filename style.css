@@ -34,7 +34,7 @@ ul {
 .banner-heading {
     font-family: 'Rubik';
     font-weight: 600;
-    font-size: 56px;
+    font-size: 5.6rem;
     line-height: 66px;
     text-transform: capitalize;
     color: #ffffff;
@@ -130,6 +130,36 @@ button {
 }
 
 /* Global styles  End */
+
+
+/* Navbar styles  Start */
+.nav-item .nav-link{
+    color: #000000;
+    font-family: "rubik";
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.6rem;
+    padding: 0px 10px;
+    margin: 0px 10px;
+}
+.nav-item .nav-link:hover, .nav-item a.active{
+color: #FF6200!important;
+}
+
+.nav-item .nav-link button{
+    background-color:#323232;
+    padding: 14px 28px;
+    color: #ffffff;
+    margin-top: 0px;
+    border-radius: 3px;
+    transition: background-color 0.5s;
+}
+.nav-item .nav-link button:hover{
+background-color: #FF6200;
+}
+
+
+/* Navbar styles  End */
 
 
 /* banner styles Start  */
@@ -457,8 +487,7 @@ button {
 
 
                 .owl-nav {
-                    top: 77%;
-                    left: 75%;
+                    display: none;
                 }
 
 
