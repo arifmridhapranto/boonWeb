@@ -243,12 +243,41 @@ button {
 .service-link:hover {
     color: #333333
 }
-
-
-
-
-
 /* Service styles  End */
+
+/* About styles  Start */
+.quote-icon img{
+    height: 40px;
+    width: 60px;
+    margin-bottom: 20px;
+}
+.testimonial-desc{
+    font-family: 'Rubik';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        color: #323232;
+}
+.user-name{
+    font-family: 'Rubik';
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+        color: #000000;
+}
+.user-designation{
+    font-family: 'Rubik';
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 24px;
+        color: #323232;
+}
+.owl-nav {
+    position: absolute;
+    top: 72%;
+    left: 80%;
+}
+/* About styles  End */
 
 
 
@@ -366,6 +395,16 @@ button {
         bottom: 0%;
         right: 0%;
     }
+        .quote-icon img {
+            height: 30px;
+            width: 40px;
+            margin-bottom: 10px;
+        }
+                .owl-nav {
+                    top: 76%;
+                    left: 75%;
+                }
+
 }
 
 @media screen and (max-width: 767px) {
@@ -412,6 +451,15 @@ button {
             bottom: 0%;
             right: 0%;
         }
+                .about-us{
+                    padding: 30px;
+                }
+
+
+                .owl-nav {
+                    top: 77%;
+                    left: 75%;
+                }
 
 
 }
