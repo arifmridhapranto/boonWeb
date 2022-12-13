@@ -294,6 +294,10 @@ header {
     z-index: 999;
 }
 
+.services-mobile {
+    display: none;
+}
+
 .services::after {
     content: "";
     display: block;
@@ -404,16 +408,18 @@ header {
 
 
 /* Footer styles Start  */
-.footer{
+footer {
     background-color: #1E2B40;
     padding: 50px 0px;
 }
-.footer-logo{
+
+.footer-logo {
     margin-bottom: 20px;
 }
-.footer-pera{
+
+.footer-pera {
     width: 90%;
-font-family: 'Rubik';
+    font-family: 'Rubik';
     font-style: normal;
     font-weight: 400;
     font-size: 1.8rem;
@@ -421,21 +427,24 @@ font-family: 'Rubik';
     text-transform: capitalize;
     color: #FFFFFF;
 }
-.icons{
+
+.icons {
     margin-top: 20px;
 }
-.icons i{
-font-size: 22px;
-color: #fff;
-margin-right: 20px;
+
+.icons i {
+    font-size: 22px;
+    color: #fff;
+    margin-right: 20px;
 }
-.icons i:hover{
+
+.icons i:hover {
     color: #FF6200;
 }
 
 
-.footer-heading{
-font-family: 'Rubik';
+.footer-heading {
+    font-family: 'Rubik';
     font-weight: 600;
     font-size: 2.2rem;
     line-height: 3.2rem;
@@ -443,23 +452,37 @@ font-family: 'Rubik';
     color: #FFFFFF;
     margin-bottom: 10px;
 }
-.footer-list{
-    padding-left: 0px;;
+
+.footer-list {
+    padding-left: 0px;
+    ;
 }
-.footer-list-item{
+
+.footer-list-item {
     margin: 10px 0px;
 }
-.footer-list-item a{
+
+.footer-list-item a {
     font-family: 'Rubik';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 1.8rem;
-        line-height: 2.8rem;
-        text-transform: capitalize;
-        color: #FFFFFF;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    text-transform: capitalize;
+    color: #FFFFFF;
 }
-.footer-list-item a:hover{
+
+.footer-list-item a:hover {
     color: #FF6200;
+}
+
+.copy-right p {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    color: #FFFFFF;
 }
 
 /* Footer styles End  */
@@ -530,13 +553,14 @@ font-family: 'Rubik';
         bottom: 0%;
         right: 0%;
     }
-                        .about-us {
-                            margin: 50px 0;
-                        }
 
-                        .about-us .row {
-                            margin-top: 30px;
-                        }
+    .about-us {
+        margin: 50px 0;
+    }
+
+    .about-us .row {
+        margin-top: 30px;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -596,12 +620,28 @@ font-family: 'Rubik';
         right: 0%;
         height: 50%;
     }
-        .about-us{
-            margin: 50px 0;
-        }
-                .about-us .row{
-                    margin-top: 30px;
-                }
+
+    .services {
+        display: none;
+    }
+
+    .services-mobile {
+        display: block;
+        width: 100%;
+        height: auto;
+        padding: 80px 0px;
+        background-color: #FAFAFF;
+        position: relative;
+        z-index: 999;
+    }
+
+    .about-us {
+        margin: 50px 0;
+    }
+
+    .about-us .row {
+        margin-top: 30px;
+    }
 
     .quote-icon img {
         height: 30px;
@@ -613,7 +653,8 @@ font-family: 'Rubik';
         top: 76%;
         left: 75%;
     }
-    .footer-pera{
+
+    .footer-pera {
         font-size: 1.6rem;
         line-height: 2.6rem;
     }
@@ -700,15 +741,18 @@ font-family: 'Rubik';
     .owl-nav {
         display: none;
     }
-        .footer {
-            padding: 50px 30px;
-        }
-        .footer .col-12{
-            margin-top: 20px;
-        }
- .footer-pera {
-     font-size: 1.6rem;
-     line-height: 2.6rem;
- }
+
+    .footer {
+        padding: 50px 30px;
+    }
+
+    .footer .col-12 {
+        margin-top: 20px;
+    }
+
+    .footer-pera {
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+    }
 
 }

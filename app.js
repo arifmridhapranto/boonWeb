@@ -9,6 +9,18 @@ jQuery(document).ready(function () {
 
     });
 });
+jQuery(document).ready(function () {
+  $(".service-slider").owlCarousel({
+    loop: true,
+    margin: 0,
+    nav: true,
+    items: 1,
+    nav: true,
+    dots: false,
+    center: true,
+    autoWidth: true,
+  });
+});
 
 
 function toggleMobileMenu(menu) {
