@@ -18,7 +18,6 @@ jQuery(document).ready(function () {
     nav: true,
     dots: false,
     center: true,
-    autoWidth: true,
   });
 });
 
