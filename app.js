@@ -6,7 +6,8 @@ jQuery(".owl-carousel").owlCarousel({
   items: 1,
   dots: false,
 });
-jQuery(".service-slider").owlCarousel({
+
+jQuery("#service-slider").owlCarousel({
     loop: true,
     margin: 0,
     nav: true,
@@ -14,8 +15,9 @@ jQuery(".service-slider").owlCarousel({
     nav: true,
     dots: false,
     center: true,
-  });
-jQuery(".works-slider").owlCarousel({
+});
+const work_slide = document.getElementById("works-slider");
+work_slide.owlCarousel({
   loop: true,
   items: 1,
   margin: 0,
