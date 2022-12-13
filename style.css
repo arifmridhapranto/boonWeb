@@ -143,16 +143,14 @@ header {
     align-items: center;
 }
 
-
-
 .nav-link {
     color: #000000;
-        font-family: "rubik";
-        font-size: 1.6rem;
-        font-weight: 500;
-        line-height: 2.6rem;
-        padding: 0px 10px;
-        margin: 0px 10px;
+    font-family: "rubik";
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.6rem;
+    padding: 0px 10px;
+    margin: 0px 10px;
 }
 
 .nav-link:hover {
@@ -174,14 +172,16 @@ header {
 
 } */
 
-.bar1, .bar3{
+.bar1,
+.bar3 {
     width: 25px;
-        height: 3px;
-        margin: 6px 0;
-        background-color: #FF6200;
-        transition: 0.4s;
+    height: 3px;
+    margin: 6px 0;
+    background-color: #FF6200;
+    transition: 0.4s;
 }
-.bar2{
+
+.bar2 {
     width: 20px;
     height: 3px;
     margin: 6px 0 6px auto;
@@ -211,7 +211,7 @@ header {
     align-items: center;
     justify-content: flex-start;
     row-gap: 10px;
-    padding-left: 20px;
+    padding: 30px 0px;
 }
 
 .mobile-menu {
@@ -220,10 +220,9 @@ header {
     top: 60px;
     left: 0;
     height: auto;
-    padding-bottom: 30px;
     width: 100%;
     background-color: #fff;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .mobile-menu li {
@@ -232,16 +231,17 @@ header {
 }
 
 
-.nav-item .nav-link button{
-    background-color:#323232;
+.nav-item .nav-link button {
+    background-color: #323232;
     padding: 14px 28px;
     color: #ffffff;
     margin-top: 0px;
     border-radius: 3px;
     transition: background-color 0.5s;
 }
-.nav-item .nav-link button:hover{
-background-color: #FF6200;
+
+.nav-item .nav-link button:hover {
+    background-color: #FF6200;
 }
 
 
@@ -252,6 +252,7 @@ background-color: #FF6200;
 
 .banner {
     background: linear-gradient(103.07deg, #092753 25.86%, #09182E 79.73%);
+    margin-top: 70px;
 }
 
 
@@ -402,6 +403,67 @@ background-color: #FF6200;
 /* About styles  End */
 
 
+/* Footer styles Start  */
+.footer{
+    background-color: #1E2B40;
+    padding: 50px 0px;
+}
+.footer-logo{
+    margin-bottom: 20px;
+}
+.footer-pera{
+    width: 90%;
+font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+.icons{
+    margin-top: 20px;
+}
+.icons i{
+font-size: 22px;
+color: #fff;
+margin-right: 20px;
+}
+.icons i:hover{
+    color: #FF6200;
+}
+
+
+.footer-heading{
+font-family: 'Rubik';
+    font-weight: 600;
+    font-size: 2.2rem;
+    line-height: 3.2rem;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+.footer-list{
+    padding-left: 0px;;
+}
+.footer-list-item{
+    margin: 10px 0px;
+}
+.footer-list-item a{
+    font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+        text-transform: capitalize;
+        color: #FFFFFF;
+}
+.footer-list-item a:hover{
+    color: #FF6200;
+}
+
+/* Footer styles End  */
+
 
 
 
@@ -428,6 +490,10 @@ background-color: #FF6200;
 /* For Tablet  */
 
 @media screen and (min-width: 992px) and (max-width:1199px) {
+    .banner {
+        margin-top: 70px;
+    }
+
     .banner-heading {
         font-size: 48px;
         line-height: 58px;
@@ -464,9 +530,20 @@ background-color: #FF6200;
         bottom: 0%;
         right: 0%;
     }
+                        .about-us {
+                            margin: 50px 0;
+                        }
+
+                        .about-us .row {
+                            margin-top: 30px;
+                        }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
+    .banner {
+        margin-top: 70px;
+    }
+
     .banner-heading {
         font-size: 40px;
         line-height: 50px;
@@ -517,7 +594,14 @@ background-color: #FF6200;
         left: 50%;
         bottom: 0%;
         right: 0%;
+        height: 50%;
     }
+        .about-us{
+            margin: 50px 0;
+        }
+                .about-us .row{
+                    margin-top: 30px;
+                }
 
     .quote-icon img {
         height: 30px;
@@ -529,10 +613,18 @@ background-color: #FF6200;
         top: 76%;
         left: 75%;
     }
+    .footer-pera{
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+    }
 
 }
 
 @media screen and (max-width: 767px) {
+    header {
+        padding: 20px 30px;
+    }
+
     header nav {
         display: none;
     }
@@ -548,6 +640,10 @@ background-color: #FF6200;
     .navbar-toggler-icon {
         height: 20px;
         width: 20px;
+    }
+
+    .banner {
+        margin-top: 48px;
     }
 
     .banner-heading {
@@ -597,12 +693,22 @@ background-color: #FF6200;
 
     .about-us {
         padding: 30px;
+
     }
 
 
     .owl-nav {
         display: none;
     }
-
+        .footer {
+            padding: 50px 30px;
+        }
+        .footer .col-12{
+            margin-top: 20px;
+        }
+ .footer-pera {
+     font-size: 1.6rem;
+     line-height: 2.6rem;
+ }
 
 }
