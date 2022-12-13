@@ -133,18 +133,104 @@ button {
 
 
 /* Navbar styles  Start */
-.nav-item .nav-link{
+
+header {
+    padding: 20px 0px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.nav-link {
     color: #000000;
-    font-family: "rubik";
-    font-size: 1.6rem;
-    font-weight: 500;
-    line-height: 2.6rem;
-    padding: 0px 10px;
-    margin: 0px 10px;
+        font-family: "rubik";
+        font-size: 1.6rem;
+        font-weight: 500;
+        line-height: 2.6rem;
+        padding: 0px 10px;
+        margin: 0px 10px;
 }
-.nav-item .nav-link:hover, .nav-item a.active{
-color: #FF6200!important;
+
+.nav-link:hover {
+    color: #FF6200;
 }
+
+.navbar-nav .nav-link.active {
+    color: #FF6200;
+}
+
+#hamburger-icon {
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+/* #hamburger-icon div {
+
+} */
+
+.bar1, .bar3{
+    width: 25px;
+        height: 3px;
+        margin: 6px 0;
+        background-color: #FF6200;
+        transition: 0.4s;
+}
+.bar2{
+    width: 20px;
+    height: 3px;
+    margin: 6px 0 6px auto;
+    background-color: #FF6200;
+    transition: 0.4s;
+    text-align: right;
+}
+
+
+.open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-5px, 5px);
+    transform: rotate(-45deg) translate(-5px, 5px);
+}
+
+.open .bar2 {
+    opacity: 0;
+}
+
+.open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    row-gap: 10px;
+    padding-left: 20px;
+}
+
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    height: auto;
+    padding-bottom: 30px;
+    width: 100%;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.mobile-menu li {
+    text-align: left;
+    margin: 10px 0px;
+}
+
 
 .nav-item .nav-link button{
     background-color:#323232;
@@ -273,40 +359,46 @@ background-color: #FF6200;
 .service-link:hover {
     color: #333333
 }
+
 /* Service styles  End */
 
 /* About styles  Start */
-.quote-icon img{
+.quote-icon img {
     height: 40px;
     width: 60px;
     margin-bottom: 20px;
 }
-.testimonial-desc{
+
+.testimonial-desc {
     font-family: 'Rubik';
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 28px;
-        color: #323232;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #323232;
 }
-.user-name{
+
+.user-name {
     font-family: 'Rubik';
-        font-weight: 600;
-        font-size: 20px;
-        line-height: 30px;
-        color: #000000;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
 }
-.user-designation{
+
+.user-designation {
     font-family: 'Rubik';
-        font-weight: 300;
-        font-size: 14px;
-        line-height: 24px;
-        color: #323232;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    color: #323232;
 }
+
 .owl-nav {
     position: absolute;
     top: 72%;
     left: 80%;
 }
+
 /* About styles  End */
 
 
@@ -364,13 +456,14 @@ background-color: #FF6200;
         font-size: 22px;
         line-height: 32px;
     }
-        .services::after {
-            width: 50%;
-            top: 19%;
-            left: 50%;
-            bottom: 0%;
-            right: 0%;
-        }
+
+    .services::after {
+        width: 50%;
+        top: 19%;
+        left: 50%;
+        bottom: 0%;
+        right: 0%;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -425,19 +518,38 @@ background-color: #FF6200;
         bottom: 0%;
         right: 0%;
     }
-        .quote-icon img {
-            height: 30px;
-            width: 40px;
-            margin-bottom: 10px;
-        }
-                .owl-nav {
-                    top: 76%;
-                    left: 75%;
-                }
+
+    .quote-icon img {
+        height: 30px;
+        width: 40px;
+        margin-bottom: 10px;
+    }
+
+    .owl-nav {
+        top: 76%;
+        left: 75%;
+    }
 
 }
 
 @media screen and (max-width: 767px) {
+    header nav {
+        display: none;
+    }
+
+    #hamburger-icon {
+        display: block;
+    }
+
+    #menu-btn {
+        display: inline-block;
+    }
+
+    .navbar-toggler-icon {
+        height: 20px;
+        width: 20px;
+    }
+
     .banner-heading {
         font-size: 36px;
         line-height: 46px;
@@ -474,21 +586,23 @@ background-color: #FF6200;
     .services {
         padding: 20px;
     }
-        .services::after {
-            width: 30%;
-            top: 63%;
-            left: 70%;
-            bottom: 0%;
-            right: 0%;
-        }
-                .about-us{
-                    padding: 30px;
-                }
+
+    .services::after {
+        width: 30%;
+        top: 63%;
+        left: 70%;
+        bottom: 0%;
+        right: 0%;
+    }
+
+    .about-us {
+        padding: 30px;
+    }
 
 
-                .owl-nav {
-                    display: none;
-                }
+    .owl-nav {
+        display: none;
+    }
 
 
 }
