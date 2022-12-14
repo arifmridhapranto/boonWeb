@@ -292,8 +292,8 @@ header {
 
 .flip-box {
   background-color: transparent;
-  width: 370px;
-  height: 320px;
+  width: 42rem;
+  height: 37rem;
   border: 1px solid #f1f1f1;
   border-radius: 10px;
 }
@@ -406,7 +406,7 @@ header {
 
 /* Service  styles  Start */
 .services {
-  padding: 80px 0px;
+  padding: 60px 0px;
   background-color: #fafaff;
   position: relative;
   z-index: 999;
@@ -420,10 +420,8 @@ header {
   content: "";
   display: block;
   position: absolute;
-  top: 20%;
+  top: 24%;
   left: 60%;
-  bottom: 0;
-  right: 0;
   width: 100%;
   height: 100%;
   background: url("Assets/bg-overlay.png");
@@ -604,6 +602,16 @@ footer {
 
 /* Responsive styles start from here   */
 
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  .flip-box{
+    width: 37rem;
+    height: 35rem;
+  }
+}
+
+
+
+
 /* For Tablet  */
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
@@ -628,7 +636,7 @@ footer {
   }
 
   .journey {
-    padding: 60px 0px;
+    padding: 30px 0px;
   }
 
   .white-section-heading {
@@ -643,8 +651,8 @@ footer {
     row-gap: 10px;
   }
   .flip-box {
-    width: 300px;
-    height: 270px;
+    width: 30rem;
+    height: 27rem;
   }
   .works-non-mobile {
     display: block;
@@ -659,7 +667,7 @@ footer {
 
   .services::after {
     width: 50%;
-    top: 19%;
+    top: 22.5%;
     left: 50%;
     bottom: 0%;
     right: 0%;
@@ -696,7 +704,7 @@ footer {
   }
 
   .journey {
-    padding: 60px 0px;
+    padding: 10px 0px;
   }
 
   .white-section-heading {
@@ -740,7 +748,7 @@ footer {
 
   .services::after {
     width: 50%;
-    top: 53%;
+    top: 54.3%;
     left: 50%;
     bottom: 0%;
     right: 0%;
@@ -843,6 +851,10 @@ footer {
   .our-works {
     padding: 0px 20px;
   }
+    .flip-box{
+height: 30rem;
+width: 37rem;
+    }
   .works-mobile {
     display: block;
   }
