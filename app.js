@@ -31,10 +31,12 @@ jQuery(document).ready(function ($) {
   });
 
 
-  function toggleMobileMenu(menu) {
-    menu.classList.toggle("open");
-  }
+
 
 
   $(".counter").counterUp();
 });
+
+  function toggleMobileMenu(menu) {
+    menu.classList.toggle("open");
+  }
