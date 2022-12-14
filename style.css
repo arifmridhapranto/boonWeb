@@ -1131,6 +1131,9 @@ margin-top: 0px;
 @media screen and (min-width: 768px) and (max-width: 991px) {}
 
 @media screen and (max-width: 767px) {
+  .img-section {
+      margin-top: 0px;
+    }
   form {
     margin-top: 30px;
   }
