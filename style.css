@@ -1027,3 +1027,113 @@ padding-bottom: 20px;
 }
 
 /* media Query Ends from Here */
+
+
+
+
+/* =======================
+
+Contact page css
+
+======================= */
+
+
+.contact-page{
+background: linear-gradient(103.07deg, #092753 25.86%, #09182e 79.73%);
+}
+
+.contact-info{
+  font-family: 'Rubik';
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 3rem;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+.map iframe{
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.img-section{
+  margin-top: 80px;
+}
+form{
+background: #091E3F;
+  border: 1px solid #386CBB;
+  border-radius: 10px;
+  padding: 40px 30px;
+}
+
+form label{
+  font-family: 'Rubik';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+    display: block;
+}
+form textarea{
+width: 100%;
+  background-color: #091E3F;
+  border: none;
+  border-bottom: 1px solid #174A96;
+  margin-bottom: 20px;
+  font-family: 'Rubik';
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+form input {
+  width: 100%;
+  height: 50px;
+  background-color: #091E3F;
+  border: none;
+  border-bottom: 1px solid #174A96;
+  margin-bottom: 20px;
+  font-family: 'Rubik';
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+form textarea::placeholder,form input::placeholder{
+  font-family: 'Rubik';
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
+
+
+
+
+
+/* .contact-us{
+margin-top: 0px;
+} */
+/* media Query Starts from Here */
+@media screen and (min-width: 992px) and (max-width: 1199px) {}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {}
+
+@media screen and (max-width: 767px) {
+  form {
+    margin-top: 30px;
+  }
+}
+
+/* media Query Ends from Here */

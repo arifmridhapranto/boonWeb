@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="html">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Boon Web</title>
+
+    <!-- Bootstrap links  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- font awesome icons links   -->
+    <script src="https://kit.fontawesome.com/11d7673b67.js" crossorigin="anonymous"></script>
+
+    <!-- css links -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- header section start here  -->
+
+    <header class="py-lg-4 p-4 fixed-top bg-white">
+        <div class="container-lg container-fluid d-flex justify-content-between align-items-center">
+            <div class="brand"><a href="/index.html" class="navbar-brand"><img src="Assets/logo.png" alt="logo"
+                        class="d-inline-block "></a></div>
+            <nav>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex flex-row align-items-center">
+                    <li class="nav-item"><a class="nav-link " aria-current="page" href="/index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link " href="/services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><button>Let's Talk</button></a></li>
+
+                </ul>
+            </nav>
+            <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <ul class="mobile-menu">
+                    <li class="nav-item"><a class="nav-link " aria-current="page" href="/index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link " href="/services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><button>Let's Talk</button></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- header section End here  -->
+
+    <main class="contact-page">
+
+        <section class="contact-us py-5 banner">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <h1 class="banner-heading">Contact Us</h1>
+                        <p class="white-pera w-100 w-md-75 text-capitalize">
+                            Feugiat nisl pretium fusce id velit ut tortor. Id venenatis a condimentum vitae sapien
+                            pellentesque.
+                        </p>
+                        <div class="address-section mt-5">
+                            <h3 class="box-heading">Physical Address</h3>
+                            <div class="contact-phone d-flex align-items-center py-2 my-4">
+                                <img src="Assets/phone.png" alt="" height="30px" width="30px" class="me-4">
+                                <h4 class="contact-info">+49(0)152 - 217 11 9 88</h4>
+                            </div>
+                            <div class="contact-mail d-flex align-items-center py-2 my-4"><img src="Assets/mail.png" alt="" height="30px" width="30px" class="me-4">
+                                <h4 class="contact-info">info@boonwef.de</h4>
+                            </div>
+                            <div class="contact-address d-flex align-items-center py-2 my-4"><img src="Assets/location.png" alt="" height="30px" width="30px" class="me-4">
+                                <h4 class="contact-info">BoonWeb GmbHRingstr.<br> 26D-84416 Taufkirchen (Vils)</h4>
+                            </div>
+                        </div>
+                        <div class="map-section mt-5">
+                            <h3 class="box-heading">Find us on map</h3>
+                            <div class="map mt-4">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5303.172250367465!2d12.119835269775379!3d48.34926000000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479e6b06563c173f%3A0x94beed91a4d24322!2sBoonWeb%20GmbH!5e0!3m2!1sen!2sbd!4v1671016092135!5m2!1sen!2sbd"
+                                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 offset-lg-1 col-md-6 col-12">
+                        <form>
+                            <label for="fname">First Name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Enter your first name here">
+
+                            <label for="lname">Last Name</label>
+                            <input type="text" id="lname" name="lastname" placeholder="Enter your Last name here">
+
+                            <label for="phone">Phone Number</label>
+                            <input type="number" id="lname" name="phone" placeholder="Enter your phone number here">
+
+                            <label for="lname">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email address here">
+
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="Subject" placeholder="Enter Subject Here">
+
+                            <label for="lname">Message</label>
+                            <textarea rows="5" type="text" id="message" name="Message" placeholder="Enter Your Message Here" ></textarea>
+
+                            <input type="submit" value="Submit" class="gradiant-btn">
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+
+        <section class="img-section">
+            <div class="container">
+                <img src="Assets/contact-img.png" alt="" class="img-fluid">
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Footer section start here  -->
+    <Footer>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-md-4  col-12">
+                        <img src="Assets/footer-logo.png" alt="" class="footer-logo img-fluid">
+                        <p class="footer-pera">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                            dolore eu fugiat nulla pariatur.</p>
+                        <div class="icons">
+                            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <!-- <div class="col-xl-2 col-md-0 " ></div> -->
+                    <div class="col-xl-2 offset-md-1 col-md-3 col-12">
+                        <h4 class="footer-heading">Quick Links</h4>
+                        <ul class="footer-list">
+                            <li class="footer-list-item"> <a href=""> About Us</a></li>
+                            <li class="footer-list-item"><a href="">Services</a></li>
+                            <li class="footer-list-item"><a href="">Portfolio</a></li>
+                        </ul>
+                    </div>
+                    <!-- <div class="col-xl-1 col-md-0"></div> -->
+                    <div class="offset-xl-1 col-xl-2 col-md-4 col-12">
+                        <h4 class="footer-heading">Help & Support</h4>
+                        <ul class="footer-list">
+                            <li class="footer-list-item"><a href="">Contact</a></li>
+                            <li class="footer-list-item"><a href="">Terms And Condition</a></li>
+                            <li class="footer-list-item"> <a href=""> Privacy & Policy</a></li>
+                        </ul>
+                    </div>
+                    <!-- <div class="col-xl-1 col-md-0"></div> -->
+                </div>
+            </div>
+        </div>
+        <div class="copy-right text-center">
+            <p>Copyright © 2022. boonwef.com | All rights reserved.</p>
+        </div>
+    </Footer>
+    <!-- Footer section end here  -->
+
+
+    <!-- Bootstrap js start   -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap js End   -->
+    <!-- Custom Js  Start -->
+
+
+    <!-- owl carousel js links  -->
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="Assets/owl-carousel/js/owl.carousel.js"></script>
+
+    <!-- Custom Js  End -->
+    <script src="app.js"></script>
+    <!-- JS links Ends From Here   -->
+</body>
+
+</html>
