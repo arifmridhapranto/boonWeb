@@ -5,6 +5,7 @@ jQuery(document).ready(function ($) {
     nav: true,
     items: 1,
     dots: false,
+    smartSpeed: 500,
   });
 
   $("#service-slider").owlCarousel({

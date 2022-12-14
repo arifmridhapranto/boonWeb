@@ -1002,6 +1002,9 @@ padding: 80px 0px;
 
 /* media Query Starts from Here */
 @media screen and (min-width: 992px) and (max-width: 1199px) {
+  .service-list {
+      padding: 80px 0px;
+    }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .section-subheading {
@@ -1018,6 +1021,9 @@ padding: 80px 0px;
     }
 }
 @media screen and (max-width: 767px) {
+  .contact-us.banner{
+    margin-top: 0;
+  }
   .section-subheading {
     font-size: 2.8rem;
     line-height: 3.8rem;
@@ -1028,8 +1034,11 @@ padding: 80px 0px;
 .text{
 padding-bottom: 20px;
 }
+.service-list {
+  padding: 60px 0px;
+}
 .counter-section {
-  padding: 0px 30px;
+  padding: 60px 30px;
 }
 .counter-container {
   flex-direction: column;
@@ -1038,7 +1047,7 @@ padding-bottom: 20px;
   padding: 20px 0px
 }
 .service-list{
-  padding: 20px 30px;
+  padding: 80px 30px;
 }
 
 }
