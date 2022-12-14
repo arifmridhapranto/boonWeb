@@ -955,6 +955,7 @@ flex-direction: row;
 }
 
 .gradiant-btn {
+  height: auto;;
   padding: 16px 32px;
 background: linear-gradient(285.48deg, #FE9656 3.69%, #FF6200 96.32%);
   border-radius: 3px;
@@ -973,6 +974,7 @@ background: linear-gradient(285.48deg, #FF6200 3.69%, #FE9656 96.32%);
 }
 .service-list{
   background-color: #FAFAFF;
+  padding: 80px 0px;
 }
 
 .list-items{
@@ -990,6 +992,9 @@ font-family: 'Rubik';
 .cta-section{
 background: linear-gradient(180deg, #FAFAFF 60%, #fff 60%);
 
+}
+.counter-section{
+padding: 80px 0px;
 }
 
 
@@ -1052,6 +1057,7 @@ Contact page css
 
 .contact-page{
 background: linear-gradient(103.07deg, #092753 25.86%, #09182e 79.73%);
+padding-top: 50px;
 }
 
 .contact-info{
@@ -1102,6 +1108,7 @@ width: 100%;
   color: #FFFFFF;
   margin-bottom: 20px;
   padding: 5px;
+  outline: none;
 }
 form input {
   width: 100%;
@@ -1118,6 +1125,7 @@ form input {
     color: #FFFFFF;
     margin-bottom: 20px;
     padding: 5px;
+      outline: none;
 }
 form textarea::placeholder,form input::placeholder{
   font-family: 'Rubik';
@@ -1127,6 +1135,11 @@ form textarea::placeholder,form input::placeholder{
     text-transform: capitalize;
     color: rgba(255, 255, 255, 0.5);
 }
+form input:focus, form textarea:focus{
+border: 1px solid #174A96;
+border-radius: 5px;
+}
+
 
 
 
@@ -1145,6 +1158,7 @@ margin-top: 0px;
 @media screen and (max-width: 767px) {
   .img-section {
       margin-top: 0px;
+      padding: 0px 30px;
     }
   form {
     margin-top: 30px;
