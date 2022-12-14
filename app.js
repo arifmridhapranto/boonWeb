@@ -21,7 +21,7 @@ jQuery(document).ready(function ($) {
   $("#works-slider").owlCarousel({
     loop: true,
     items: 1,
-    margin: 0,
+    margin: 30,
     dots: false,
     nav: true,
     center: true,
