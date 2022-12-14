@@ -93,6 +93,7 @@ button {
   border: none;
   margin-top: 10px;
   border-radius: 3px;
+  background: none;
 }
 
 .btn {
@@ -109,7 +110,7 @@ button {
   font-weight: 500;
   font-family: "rubik";
   color: #333333;
-  transition: background-color 0.5s;
+  transition: all 0.5s;
 }
 .dark-btn {
   padding: 16px 32px;
@@ -121,7 +122,7 @@ button {
   font-weight: 500;
   font-family: "rubik";
   color: #ffffff;
-  transition: background-color 0.5s;
+  transition: all 0.5s;
 }
 
 .dark-btn:hover {
@@ -130,7 +131,7 @@ button {
 }
 .white-btn:hover {
   background-color: #ff6200;
-  color: #333333;
+  color: #fff;
 }
 
 .orange-btn {
@@ -809,6 +810,7 @@ footer {
 
   .banner {
     margin-top: 48px;
+    padding: 50px 30px;
   }
 
   .banner-heading {
@@ -916,6 +918,70 @@ Services page css
   text-transform: capitalize;
   color: #323232;
 }
+.counter-container{
+  padding-top: 30px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-direction: row;
+}
+.counter-box p{
+  font-family: 'Rubik';
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    color: #000000;
+    text-align: center;
+}
+.number{
+  font-family: 'Rubik';
+    font-weight: 600;
+    font-size: 4rem;
+    line-height: 6rem;
+  color: #FF6200;
+  text-align: center;
+}
+
+.gradiant-btn {
+  padding: 16px 32px;
+background: linear-gradient(285.48deg, #FE9656 3.69%, #FF6200 96.32%);
+  border-radius: 3px;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 500;
+  font-family: "rubik";
+  color: #ffffff;
+  transition: background-color 0.5s;
+}
+
+.gradiant-btn:hover {
+background: linear-gradient(285.48deg, #FF6200 3.69%, #FE9656 96.32%);
+  color: #ffffff;
+}
+.service-list{
+  background-color: #FAFAFF;
+}
+
+.list-items{
+  padding-top: 20px
+}
+.list-heading{
+font-family: 'Rubik';
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: capitalize;
+  color: #000000;
+}
+
+.cta-section{
+background: linear-gradient(180deg, #FAFAFF 60%, #fff 60%);
+
+}
+
+
+
 
 /* media Query Starts from Here */
 @media screen and (min-width: 992px) and (max-width: 1199px) {
@@ -925,6 +991,14 @@ Services page css
     font-size: 2.8rem;
     line-height: 3.8rem;
   }
+  .counter-section{
+    padding: 0px 30px;
+    margin: 50px 0px;
+  }
+    .number {
+      font-size: 3.2rem;
+      line-height: 4.2rem;
+    }
 }
 @media screen and (max-width: 767px) {
   .section-subheading {
@@ -937,6 +1011,19 @@ Services page css
 .text{
 padding-bottom: 20px;
 }
+.counter-section {
+  padding: 0px 30px;
+}
+.counter-container {
+  flex-direction: column;
+}
+.counter-box{
+  padding: 20px 0px
+}
+.service-list{
+  padding: 20px 30px;
+}
+
 }
 
 /* media Query Ends from Here */
