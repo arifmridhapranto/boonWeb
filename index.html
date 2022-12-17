@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
+        <!-- aos animation css links start  -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <!-- aos animation css links End  -->
+
     <!-- font awesome icons links   -->
     <script src="https://kit.fontawesome.com/11d7673b67.js" crossorigin="anonymous"></script>
 
@@ -28,7 +32,7 @@
     <!-- Header Part Start From Here   -->
      <header class="py-lg-4 p-4 fixed-top bg-white">
         <div class="container-lg container-fluid d-flex justify-content-between align-items-center">
-            <div class="brand"><a href="/index.html" class="navbar-brand"><img src="Assets/logo.png" alt="logo"
+            <div class="brand"><a href="./index.html" class="navbar-brand"><img src="Assets/logo.png" alt="logo"
                         class="d-inline-block "></a></div>
             <nav>
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex flex-row align-items-center">
@@ -58,7 +62,7 @@
             <div class="container py-md-5">
                 <div class="row py-md-5 flex-md-row flex-column-reverse">
                     <div
-                        class=" col-md-6 col-lg-5 col-12 justify-content-center d-flex flex-column align-items-start py-5 py-md-0">
+                        class=" col-md-6 col-lg-5 col-12 justify-content-center d-flex flex-column align-items-start py-5 py-md-0"  data-aos="fade-up-right">
                         <h1 class="banner-heading">We provide best <span class="orange-heading"> Programming </span>
                             service</h1>
                         <p class="white-pera">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
@@ -66,7 +70,7 @@
                             occaecat cupidatat non proident</p>
                         <button><a href="#" class="white-btn mt-4">Book an apointment</a></button>
                     </div>
-                    <div class="col-md-6 col-lg-6 offset-lg-1  col-12">
+                    <div class="col-md-6 col-lg-6 offset-lg-1  col-12" data-aos="fade-left">
                         <img src="Assets/banner-img.png" alt="" class="img-fluid">
                     </div>
                 </div>
@@ -78,10 +82,10 @@
          <section class="journey px-md-0 px-5">
             <div class="container">
                 <div class="row align-items-center gx-5 gy-md-0 gy-5">
-                    <div class="col-md-6 offset-lg-1 col-lg-5  col-12">
+                    <div class="col-md-6 offset-lg-1 col-lg-5  col-12" data-aos="fade-right">
                         <img src="Assets/journey.png" alt="" class="img-fluid">
                     </div>
-                    <div class="col-md-6 col-lg-6 col-12 ">
+                    <div class="col-md-6 col-lg-6 col-12 " data-aos="fade-left">
                         <h1 class="section-heading">We have been programming for you since <span
                                 class="orange-heading">2009</span></h1>
                         <p class="dark-pera">BoonWeb is a programming and web design company founded in Freising in
@@ -98,9 +102,9 @@
         <!-- boonWeb journey section End here -->
 
         <!-- Works section Start here -->
-        <section class="our-works works-non-mobile my-md-5 py-5 d-none d-lg-block">
+        <section class="our-works works-non-mobile my-md-5 py-5 d-none d-lg-block" data-aos="fade-up">
             <div class="container">
-
+                <h1 class="section-heading">Our works</h1>
                 <div class="works-box py-5">
                     <div class="work">
                         <div class="flip-box">
@@ -152,7 +156,7 @@
                 <button><a href="" class="dark-btn">See All Portfolios</a></button></div>
             </div>
         </section>
-        <section  class="works-mobile my-5 d-block d-lg-none">
+        <section  class="works-mobile my-5 d-block d-lg-none" data-aos="fade-up">
             <div class="container ">
                 <h1 class="section-heading">Our works</h1>
                 <div id="works-slider"  class="owl-carousel owl-theme py-5">
@@ -211,7 +215,7 @@
         <!-- Works section End here -->
 
         <!-- CTA section Start here -->
-       <section class="cta">
+       <section class="cta" data-aos="zoom-out">
             <div class="container cta-container">
                 <div class="row align-items-center justify-content-between">
                     <div class=" col-md-8 col-lg-8 col-xl-7 col-12 ">
@@ -226,11 +230,11 @@
         <!-- CTA  section End here -->
 
         <!--Services  section Start here -->
-        <section class="services my-5 d-none d-lg-block">
+        <section class="services my-5 d-none d-lg-block" data-aos="zoom-in">
             <div class="container">
                 <h1 class="section-heading"> <span class="orange-heading">Services</span> We Provide</h1>
                 <div class="row g-5 py-5 justify-content-between">
-                    <div class="col-12 col-lg-4">
+                    <div class="col-12 col-lg-4" data-aos="fade-right">
                         <div class="service-box">
                             <img src="Assets/service-img-1.png" alt="" class="img-fluid" >
                             <h3 class="service-title">Website Development</h3>
@@ -240,7 +244,7 @@
                                         class="fa-solid fa-chevron-right"></i></a></button>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-4">
+                    <div class="col-12 col-lg-4"  data-aos="fade-up">
                         <div class="service-box">
                             <img src="Assets/service-img-2.png" alt="" class="img-fluid">
                             <h3 class="service-title">Consulting</h3>
@@ -250,7 +254,7 @@
                                         class="fa-solid fa-chevron-right"></i></a></button>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-4">
+                    <div class="col-12 col-lg-4"  data-aos="fade-left">
                         <div class="service-box">
                             <img src="Assets/service-img-3.png" alt="" class="img-fluid" >
                             <h3 class="service-title">Education</h3>
@@ -266,7 +270,7 @@
                 </div>
             </div>
         </section>
-       <section  class=" services-mobile my-5 d-block d-lg-none">
+       <section  class=" services-mobile my-5 d-block d-lg-none" data-aos="fade-up">
             <div class="container">
                 <h1 class="section-heading"> <span class="orange-heading">Services</span> We Provide</h1>
                 <div id="service-slider" class="service-slider py-5 owl-carousel owl-theme" >
@@ -303,14 +307,18 @@
         <!-- Services  section End here -->
 
         <!-- About  section End here -->
-        <section class="about-us py-5">
+        <section class="about-us py-5" data-aos="fade-up">
             <div class="container py-5">
                 <h1 class="section-heading"> what customer says <span class="orange-heading">about us</span></h1>
-                <div class="row align-items-center g-5 my-5">
-                    <div class="col-md-5 col-xl-5 offset-xl-1 col-12">
+                <div class="row align-items-center g-5 my-5" >
+                    <div class="col-md-5 col-xl-5 offset-xl-1 col-12" data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
                         <img src="Assets/slider-img.png" alt="" class="img-fluid">
                     </div>
-                    <div class="col-md-7 col-xl-6 col-12">
+                    <div class="col-md-7 col-xl-6 col-12" data-aos="fade-up"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
                         <div id="testimonials" class="owl-carousel owl-theme">
                             <div class="item">
                                 <div class="quote-icon">
@@ -474,6 +482,12 @@
     <!-- Bootstrap js End   -->
     <!-- Custom Js  Start -->
 
+
+    <!-- aos animation links start  -->
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- aos animation links end  -->
 
     <!-- owl carousel js links  -->
 

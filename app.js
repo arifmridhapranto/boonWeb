@@ -38,3 +38,9 @@ jQuery(document).ready(function ($) {
   function toggleMobileMenu(menu) {
     menu.classList.toggle("open");
   }
+
+AOS.init({
+  delay: 0,
+  duration: 1200,
+  easing: "ease-in-out",
+});
